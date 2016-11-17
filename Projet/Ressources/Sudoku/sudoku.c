@@ -9,6 +9,7 @@
 #include "sudoku.h"
 #include "action.h"
 #include "affichage.h"
+#include "ecrire.h"
 
 // Initialise le sudoku à vide
 SUDOKU initialiser_sudoku (){
@@ -125,6 +126,8 @@ SUDOKU modifier_sudoku_action (SUDOKU S, ACTION A) {
 // Le main
 int main() {
 	SUDOKU S;
+	int x,y;
+	ecrire(x,y,S);
 	ACTION A;
 	initialiser_affichage();
 	S = initialiser_sudoku();
